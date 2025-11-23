@@ -1,0 +1,27 @@
+<ion-content class="despesa-page">
+
+  <div class="despesa-container">
+
+    <h1>Nova Despesa</h1>
+
+    <ion-item lines="none">
+      <ion-input label="Nome da despesa" type="text" [(ngModel)]="nome"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-input label="Valor" type="number" [(ngModel)]="valor"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-input label="Data de vencimento" type="date" [(ngModel)]="vencimento"></ion-input>
+    </ion-item>
+
+    <div class="criar-container">
+      <ion-button expand="block" class="btn-criar" (click)="salvar()">
+        Salvar Despesa
+      </ion-button>
+    </div>
+
+  </div>
+
+</ion-content>

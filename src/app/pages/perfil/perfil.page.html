@@ -1,0 +1,22 @@
+<ion-content class="perfil-page">
+
+  <div class="perfil-container">
+
+    <h1>Meu Perfil</h1>
+
+    <ion-card class="perfil-card">
+      <ion-card-content>
+
+        <div class="valor">{{ usuario.nome }}</div>
+        <div class="valor">{{ usuario.email }}</div>
+
+      </ion-card-content>
+    </ion-card>
+
+    <ion-button expand="block" color="danger" (click)="logout()">
+      Sair do Aplicativo
+    </ion-button>
+
+  </div>
+
+</ion-content>

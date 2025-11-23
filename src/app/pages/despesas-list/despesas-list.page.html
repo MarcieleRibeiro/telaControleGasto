@@ -1,0 +1,41 @@
+<ion-content class="list-page">
+
+  <h1 class="title">Minhas Despesas</h1>
+
+  <div class="list-container">
+
+    <ion-card *ngFor="let d of despesas" class="despesa-card">
+      <ion-card-content>
+
+        <div class="linha">
+          <span class="nome">{{ d.nome }}</span>
+          <span class="valor">R$ {{ d.valor }}</span>
+        </div>
+
+        <div class="vencimento">
+          Vencimento: {{ d.vencimento }}
+        </div>
+
+        <div class="botoes">
+          <ion-button size="small" color="success" fill="outline" (click)="editar(d.id)">
+            Editar
+          </ion-button>
+
+          <ion-button size="small" color="danger" fill="outline" (click)="deletar(d.id)">
+            Excluir
+          </ion-button>
+        </div>
+
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+
+  <!-- Botão flutuante para criar -->
+  <div class="criar-container">
+    <ion-button expand="block" class="btn-criar" (click)="novaDespesa()">
+      Criar Despesa
+    </ion-button>
+  </div>
+
+  <ion-content id="main-content">

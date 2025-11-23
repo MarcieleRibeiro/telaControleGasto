@@ -1,0 +1,43 @@
+.perfil-page {
+  --background: #000;
+  color: #fff;
+
+  .perfil-container {
+    padding: 24px;
+    margin-top: 40px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #32cd32;
+  }
+
+  .perfil-card {
+    --background: #111;
+    margin-bottom: 24px;
+    border-radius: 12px;
+  }
+
+  .info {
+    margin-bottom: 16px;
+  }
+
+  .titulo {
+    font-size: 14px;
+    color: #32cd32;
+  }
+
+  .valor {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  ion-button {
+    height: 50px;
+    font-weight: bold;
+  }
+}

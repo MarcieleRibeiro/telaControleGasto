@@ -1,0 +1,33 @@
+.login-page {
+  --background: #000;
+  color: #fff;
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    padding: 20px;
+  }
+
+  ion-item {
+    margin-bottom: 12px;
+    --background: #111;
+    border-radius: 8px;
+    --color: #fff;
+  }
+
+  .login-button {
+    margin-top: 16px;
+    height: 48px;
+    --background: #32cd32;
+    --color: #000;
+    font-weight: bold;
+  }
+
+  .link {
+    text-align: center;
+    margin-top: 18px;
+    color: #ccc;
+    cursor: pointer;
+  }
+}

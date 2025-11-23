@@ -1,0 +1,26 @@
+<ion-content class="login-page">
+  <div class="login-container">
+
+    <h1>Login</h1>
+
+    <ion-item lines="none">
+      <ion-input label="Email" type="email" [(ngModel)]="email">
+      </ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-input label="Senha" type="password" [(ngModel)]="senha">
+      </ion-input>
+    </ion-item>
+
+    <ion-button expand="block" color="success" class="login-button" (click)="login()">
+      Entrar
+    </ion-button>
+
+    <p class="link" (click)="goToRegister()">
+      Não tem conta?
+      <span style="color:#32cd32">Cadastre-se</span>
+    </p>
+
+  </div>
+</ion-content>

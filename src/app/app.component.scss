@@ -1,0 +1,16 @@
+.menu-content {
+    --background: #000;
+    color: #fff;
+
+    ion-item {
+        --background: #111;
+        --color: #fff;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        font-weight: bold;
+
+        ion-label {
+            font-size: 18px;
+        }
+    }
+}

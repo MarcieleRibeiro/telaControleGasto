@@ -1,0 +1,59 @@
+.home-page {
+  --background: #000;
+  color: #fff;
+
+  .home-container {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 26px;
+    color: #32cd32;
+    margin-bottom: 20px;
+  }
+
+  .grafico-container {
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+
+  canvas {
+    width: 100% !important;
+    height: 200px !important;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .card {
+    --background: #111;
+    border-radius: 12px;
+  }
+
+  .valor {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .verde {
+    color: #32cd32;
+  }
+
+  .vermelho {
+    color: #ff4d4d;
+  }
+
+  .label {
+    margin-top: 5px;
+    color: #bbb;
+    font-size: 14px;
+  }
+}

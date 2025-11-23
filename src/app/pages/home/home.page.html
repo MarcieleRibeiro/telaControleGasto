@@ -1,0 +1,40 @@
+<ion-content class="home-page" id="main-content">
+
+  <div class="home-container">
+
+    <h1>Resumo do Mês</h1>
+
+    <!-- Mini Gráfico -->
+    <div class="grafico-container">
+      <canvas id="grafico"></canvas>
+    </div>
+
+    <!-- Cards de resumo -->
+    <div class="cards">
+
+      <ion-card class="card">
+        <ion-card-content>
+          <div class="valor">R$ {{ totalGasto | number:'1.2-2' }}</div>
+          <div class="label">Total Gasto</div>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="card">
+        <ion-card-content>
+          <div class="valor verde">R$ {{ totalPago | number:'1.2-2' }}</div>
+          <div class="label">Pago</div>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="card">
+        <ion-card-content>
+          <div class="valor vermelho">R$ {{ totalAPagar | number:'1.2-2' }}</div>
+          <div class="label">A pagar</div>
+        </ion-card-content>
+      </ion-card>
+
+    </div>
+
+  </div>
+
+</ion-content>

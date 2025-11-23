@@ -1,0 +1,32 @@
+<ion-content class="edit-page">
+
+  <div class="edit-container">
+
+    <h1>Editar Despesa</h1>
+
+    <!-- Nome -->
+    <ion-item lines="none">
+      <ion-input label="Nome da despesa" type="text" [(ngModel)]="nome">
+      </ion-input>
+    </ion-item>
+
+    <!-- Valor -->
+    <ion-item lines="none">
+      <ion-input label="Valor" type="number" [(ngModel)]="valor">
+      </ion-input>
+    </ion-item>
+
+    <!-- Data -->
+    <ion-item lines="none">
+      <ion-input label="Data de vencimento" type="date" [(ngModel)]="vencimento">
+      </ion-input>
+    </ion-item>
+
+    <!-- Botão -->
+    <ion-button expand="block" color="success" (click)="salvar()">
+      Salvar Alterações
+    </ion-button>
+
+  </div>
+
+  <ion-content id="main-content">

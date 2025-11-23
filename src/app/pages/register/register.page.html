@@ -1,0 +1,55 @@
+<ion-content class="register-page">
+
+  <div class="register-container">
+
+    <h1>Criar conta</h1>
+
+    <!-- Nome -->
+    <ion-item lines="none">
+      <ion-input
+        label="Nome"
+        type="text"
+        [(ngModel)]="nome">
+      </ion-input>
+    </ion-item>
+
+    <!-- Email -->
+    <ion-item lines="none">
+      <ion-input
+        label="Email"
+        type="email"
+        [(ngModel)]="email">
+      </ion-input>
+    </ion-item>
+
+    <!-- Senha -->
+    <ion-item lines="none">
+      <ion-input
+        label="Senha"
+        type="password"
+        [(ngModel)]="senha">
+      </ion-input>
+    </ion-item>
+
+    <!-- Confirmar Senha -->
+    <ion-item lines="none">
+      <ion-input
+        label="Confirmar senha"
+        type="password"
+        [(ngModel)]="confirmarSenha">
+      </ion-input>
+    </ion-item>
+
+    <!-- Botão Criar Conta -->
+    <ion-button
+      expand="block"
+      color="success"
+      (click)="register()">
+      Criar conta
+    </ion-button>
+
+    <p class="link" (click)="goToLogin()">Já tenho conta</p>
+
+  </div>
+
+</ion-content>
