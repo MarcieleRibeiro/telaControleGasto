@@ -1,0 +1,7 @@
+{
+  "name": "controle-gastos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
